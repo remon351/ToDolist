@@ -1,0 +1,29 @@
+﻿
+<h1>CreateNew</h1>
+<H3>Listitem</H3>
+<form action="addToDoList" method="post" style="width: 50%; margin: 20px auto;">
+    <div style="margin-bottom: 20px;">
+        <label for="title" style="display: block; margin-bottom: 5px;">Title</label>
+        <input type="text" id="title" name="Title" style="width: 100%; padding: 10px;" placeholder="Enter title" required>
+    </div>
+
+    <div style="margin-bottom: 20px;">
+        <label for="description" style="display: block; margin-bottom: 5px;">Description</label>
+        <textarea id="description" name="Description" style="width: 100%; padding: 10px;" placeholder="Enter description" required></textarea>
+    </div>
+
+    <div style="margin-bottom: 20px;">
+        <label for="deadline" style="display: block; margin-bottom: 5px;">Deadline</label>
+        <input type="datetime-local" id="deadline" name="Deadline" style="width: 100%; padding: 10px;" required>
+    </div>
+
+    <div style="margin-bottom: 20px;">
+        <label for="file" style="display: block; margin-bottom: 5px;">Upload File</label>
+        <input type="file" id="file" name="file" style="width: 100%; padding: 10px;" accept=".jpg,.jpeg,.png,.pdf" required>
+        <small style="display: block; margin-top: 5px; color: #555;">Supported formats: JPG, JPEG, PNG, PDF</small>
+    </div>
+
+    <div>
+        <button type="submit" style="padding: 10px 20px;">Submit</button>
+    </div>
+</form>

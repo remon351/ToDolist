@@ -1,0 +1,22 @@
+﻿<h1>Edit Item</h1>
+<div>
+    <form action="/Todoitem/edit" method="post" style="width: 50%; margin: 20px auto;">
+        <div style="margin-bottom: 20px;">
+            <label for="title" style="display: block; margin-bottom: 5px;">Title</label>
+            <input type="text" id="title" class="form-control" name="Title" style="width: 100%; padding: 10px;" placeholder="Enter title"  value="@Model.Title">
+        </div>
+
+        <div style="margin-bottom: 20px;">
+            <label for="description" style="display: block; margin-bottom: 5px;">Description</label>
+            <textarea id="description" name="Description" style="width: 100%; padding: 10px;" placeholder="Enter description" required>@Model.Description</textarea>
+        </div>
+
+        <div style="margin-bottom: 20px;">
+            <label for="deadline" style="display: block; margin-bottom: 5px;">Deadline</label>
+            <input type="datetime-local" id="deadline" name="Deadline" style="width: 100%; padding: 10px;" required value="@Model.Deadline.ToString("yyyy-MM-ddTHH:mm")">
+        </div>
+        <div>
+            <button type="submit" style="padding: 10px 20px;">Save changes</button>
+        </div>
+    </form>
+</div>
